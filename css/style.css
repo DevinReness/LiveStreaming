@@ -1,0 +1,225 @@
+
+@font-face{
+    font-family: 'Hi-Monday';
+    src : url('../fonts/himonday-webfont.woff');
+    src : url('../fonts/himonday-webfont.woff2') format('woff');
+}
+
+@font-face{
+    font-family: 'Lato';
+    src : url('../fonts/lato-regular-webfont.woff') format('woff');
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    background-color: #00334e;
+}
+
+:focus{outline: none;}
+
+.cover-wrap{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+
+.content-wrap{
+    margin-top: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.box{
+    margin-top: 16px;
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 6px;
+}
+
+.box-style{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.box-style:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+.text-wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+h1,h2{
+    text-align: center;
+}
+
+.title{
+    font-size: 96px;
+    font-family: 'Hi-Monday',sans-serif;
+    color: #f9ca24 !important;
+}
+
+.medium-title{
+    display: block;
+    font-size: 42px;
+    font-family: 'Hi-Monday',sans-serif;
+    color: #f9ca24 !important;
+}
+
+.medium-subtitle{
+    font-size: 20px;
+    display: block;
+}
+
+h2{
+    color: #ffffff;
+    font-family: 'Hi-Monday',sans-serif;
+}
+
+a {
+    color:  #f9ca24;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.button-wrap{
+    position: relative;
+    margin-top: 16px; 
+}
+
+.button{
+    display: inline-flex;
+    height: 40px;
+    width: 150px;
+    border: 2px solid #f9ca24;
+    color:  #f9ca24;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+
+
+#button-2 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+  
+#button-2 a {
+    position: relative;
+    transition: all .35s ease-Out;
+}
+  
+#slide {
+    width: 100%;
+    height: 100%;
+    left: -200px;
+    background:  #f9ca24;
+    position: absolute;
+    transition: all .35s ease-Out;
+    bottom: 0;
+    border: 2px solid #f9ca24;
+}
+  
+  #button-2:hover #slide {
+    left: 0;
+    border: 2px solid #f9ca24;
+  }
+  
+  #button-2:hover a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+
+  input[type="text"]{
+    font: 15px/24px "Lato", Arial, sans-serif; 
+    color: #333; width: 100%; box-sizing: border-box; 
+    letter-spacing: 1px;
+    }
+
+    .effect-17{
+        border: 0; 
+        padding: 4px 0; 
+        border-bottom: 1px solid #ccc; 
+        background-color: transparent;
+    }
+
+    .effect-17 ~ .focus-border{
+        position: absolute; 
+        bottom: 0; 
+        left: 50%; 
+        width: 0; 
+        height: 2px; 
+        background-color: #f9ca24; 
+        transition: 0.4s;
+    }
+
+    .effect-17:focus ~ .focus-border,.has-content.effect-17 ~ .focus-border{
+        width: 100%; 
+        transition: 0.4s; 
+        left: 0;
+    }
+
+    .effect-17 ~ label{
+        position: absolute; 
+        left: 0; 
+        width: 100%; 
+        top: 9px; color: #aaa; 
+        transition: 0.3s; 
+        z-index: -1; 
+        letter-spacing: 0.5px;
+    }
+
+    .effect-17:focus ~ label, .has-content.effect-17 ~ label{
+        top: -16px; 
+        font-size: 12px; 
+        color: #3399FF; 
+        transition: 0.3s;
+    }
+
+    #stream-info{
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+    }
+
+    .done-button{
+        margin: 0 auto;
+    }
+
+    .streamButton,.watchButton{
+        display: flex;
+        justify-content: center;
+        margin: 30px 0; 
+    }
+
+    .bar-header{
+        background-color: #00334e;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
